@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.typing-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    color: #555;
+    font-size: 14px;
+  }
+  
+  .typing-indicator::after {
+    content: '...';
+    display: inline-block;
+    animation: typing 1s steps(3, end) infinite;
+  }
+  
+  @keyframes typing {
+    0%, 100% {
+      width: 0;
+    }
+    50% {
+      width: 1.5em;
+    }
+  }
