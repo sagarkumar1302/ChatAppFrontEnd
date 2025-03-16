@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import { axiosInstance } from "../lib/axios.js";
 import toast from "react-hot-toast";
-const BASE_URL= import.meta.env==="development"? "http://localhost:5000/" : "/"
+const BASE_URL= import.meta.env==="development"? "http://localhost:5000/" : "https://chatappbackend-production-6b03.up.railway.app/"
 import {io} from "socket.io-client";
 export const useAuthStore = create((set, get) => ({
   authUser: null,
